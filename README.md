@@ -37,15 +37,21 @@ Run the application:
 ```bash
 python human_verification.py
 ```
-Directory Setup
+## Directory Setup
+
 Place the images you want to use for the verification in a directory on your system. Update the directory variable in the on_verify_click() function to point to your image directory:
+
 directory = "C:\\Users\\YourUsername\\Path\\To\\Images"
+
 The application supports the following image formats: .png, .jpg, .jpeg, .gif.
 
 ## Usage
 Launch the application. A window will appear with a prompt asking if you are human.
+
 Click "Click here to verify". The application will randomly select and display an image from the specified directory.
+
 Identify the image by clicking the correct option from the provided choices. The options are shuffled each time.
+
 Verification Result: If you select the correct option, you will see a "Verified Successfully" message. If not, you'll be prompted to try again.
 
 ## Contributing
