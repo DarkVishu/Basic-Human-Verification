@@ -36,13 +36,22 @@ def display_image(canvas, image_path, image_name):
     img = img.resize((230, 160))
     img_tk = ImageTk.PhotoImage(img)
     
-    canvas.create_rectangle(20, 20, 380, 280, fill="lightblue")
-    canvas.create_rectangle(80, 20, 320, 195, fill="white", outline="black")
+    canvas.create_rectangle(20, 20, 380, 280, fill="white")
     canvas.create_image(200, 110, image=img_tk)
+    canvas.create_image(45, 110, image=img_tk)
+    canvas.create_image(350, 110, image=img_tk)
     canvas.create_rectangle(160, 30, 165, 190, fill="white", outline="white")
     canvas.create_rectangle(235, 30, 240, 190, fill="white", outline="white")
     canvas.create_rectangle(85, 75, 315, 80, fill="white", outline="white")
     canvas.create_rectangle(85, 130, 315, 135, fill="white", outline="white")
+    canvas.create_rectangle(0,0,400,25,outline="black",fill="black")
+    canvas.create_rectangle(0,0,20,300,outline="black",fill="black")
+    canvas.create_rectangle(380,0,400,300,outline="black",fill="black")
+    canvas.create_rectangle(0,280,400,300,outline="black",fill="black")
+    canvas.create_rectangle(20,26,84,280,outline="lightblue",fill="lightblue")
+    canvas.create_rectangle(315,26,380,280,outline="lightblue",fill="lightblue")
+    canvas.create_rectangle(50,190,320,280,outline="lightblue",fill="lightblue")
+    canvas.create_rectangle(80, 20, 320, 195, outline="black")
 
     # Shuffle and assign random texts to buttons
     options = ["flower", "car", "world"]
@@ -91,3 +100,4 @@ def create_main_window():
     root.mainloop()
 
 create_main_window()
+
